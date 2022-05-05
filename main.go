@@ -27,8 +27,9 @@ func main() {
 	)
 
 	// Register handler
-	if err := pb.RegisterMicroDemoHandler(srv.Server(), new(handler.MicroDemo)); err != nil {
-		logger.Fatal(err)
+	err := pb.RegisterMicroDemoHandler(srv.Server(), new(handler.MicroDemo))
+	if err != nil {
+		return
 	}
 
 	// Run service

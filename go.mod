@@ -6,6 +6,7 @@ require (
 	github.com/asim/go-micro/cmd/protoc-gen-micro/v3 v3.7.0 // indirect
 	github.com/asim/go-micro/plugins/registry/consul/v3 v3.7.0 // indirect
 	github.com/asim/go-micro/v3 v3.7.1
+	github.com/gin-gonic/gin v1.7.7 // indirect
 	github.com/go-git/go-git/v5 v5.4.2 // indirect
 	github.com/golang/protobuf v1.5.2
 	github.com/hashicorp/consul/api v1.12.0 // indirect
