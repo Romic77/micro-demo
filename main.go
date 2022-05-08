@@ -20,6 +20,7 @@ func main() {
 
 	// Create service
 	srv := micro.NewService(
+		//注册服务名称
 		micro.Name("micro-demo"),
 		micro.Version("latest"),
 		// 注册consul中心

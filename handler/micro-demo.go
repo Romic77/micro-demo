@@ -17,7 +17,7 @@ func New() *MicroDemo {
 
 // Call is a single request handler called via client.Call or the generated client code
 func (e *MicroDemo) Call(ctx context.Context, req *microdemo.Request, rsp *microdemo.Response) error {
-	log.Info("Received MicroDemo.Call request")
+	log.Info("Received MicroDemo.Call request. Name:", req.Name)
 	rsp.Msg = "Hello " + req.Name
 	return nil
 }

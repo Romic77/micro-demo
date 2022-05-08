@@ -11,9 +11,7 @@ func main() {
 	// 创建 gin 路由
 	r := gin.Default()
 	r.GET("/user", func(c *gin.Context) {
-		c.JSON(http.StatusOK, map[string]string{
-			"msg": "user api",
-		})
+		c.JSON(http.StatusOK, gin.H{"msg": "user api"})
 	})
 
 	// 创建一个新的服务，服务名为 go.micro.srv.hello
